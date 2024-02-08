@@ -153,7 +153,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="1"
-                android:layout_column="1"/>
+                android:layout_column="1"
+                />
+
 
         </GridLayout>
         
@@ -252,15 +254,91 @@
         android:id="@+id/chat"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_marginLeft="20sp"
         android:background="@color/secondGray"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
-        app:layout_constraintStart_toEndOf="@id/channels"
-        app:layout_constraintEnd_toStartOf=""
-        android:layout_margin="10sp"
         android:paddingHorizontal="10sp"
-        >
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/channels"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dcladoderecho01" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@color/secondGray"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/dcgato" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="We"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="8dp"
+                android:text="This"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/dcladoderecho02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="8dp"
+                android:text="WHO"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/dcladoderecho03" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/dcladoderecho04" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
